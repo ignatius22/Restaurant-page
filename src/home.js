@@ -10,14 +10,14 @@ data-ride="carousel"
   <div class="carousel-item active">
     <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/02/19/11/30/shrimp-1209744_960_720.jpg" alt="Parfait" />
     <div class="carousel-caption d-none d-md-block d-lg-block">
-      <h5>Parfait</h5>
+      <h5>Fried Rice</h5>
     </div>
   </div>
   <div class="carousel-item">
     <img
       class="d-block w-100"
       src="https://cdn.pixabay.com/photo/2016/05/13/16/37/muffin-1390368_960_720.jpg"
-      alt="Banana Bread"
+      alt="Muffin "
     />
     <div class="carousel-caption d-none d-md-block d-lg-block">
       <h5>Banana Bread</h5>
@@ -30,7 +30,7 @@ data-ride="carousel"
       alt="Beef Sauce"
     />
     <div class="carousel-caption d-none d-md-block d-lg-block">
-      <h5>Beef Sauce</h5>
+      <h5>Jollof Rice</h5>
     </div>
   </div>
 </div>
@@ -74,30 +74,62 @@ const aboutInfo = `
   </p>
 </div>
 <div class ="row">
-<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-xl-6 mb-4">
-  <div class="card bg-dark text-white">
-    <img class="card-img" src="https://cdn.pixabay.com/photo/2016/06/08/18/44/the-dish-1444332_960_720.jpg" alt="Card image">
-    <div class="card-img-overlay">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text">Last updated 3 mins ago</p>
+  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-xl-6 mb-4">
+    <div class="card bg-dark text-white">
+      <img class="card-img" src="https://www.travelstart.com.ng/blog/wp-content/uploads/2014/03/Pounded-Yam1.jpg">
+      <div class="card-img-overlay">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text">Last updated 3 mins ago</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-xl-6">
+    <div class="card bg-dark text-white">
+      <img class="card-img" src="https://i.pinimg.com/originals/31/da/cd/31dacdcf8f679d857cfa7658e1607454.png" alt="Card image">
+      <div class="card-img-overlay">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text">Last updated 3 mins ago</p>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-xl-6">
-  <div class="card bg-dark text-white">
-    <img class="card-img" src="https://cdn.pixabay.com/photo/2016/06/08/18/44/the-dish-1444332_960_720.jpg" alt="Card image">
-    <div class="card-img-overlay">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text">Last updated 3 mins ago</p>
+<div class ="row">
+  <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 col-xl-4 mb-4">
+    <div class="card bg-dark text-white">
+      <img class="card-img" src="https://www.travelstart.com.ng/blog/wp-content/uploads/2014/03/Pounded-Yam1.jpg">
+      <div class="card-img-overlay">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text">Last updated 3 mins ago</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 col-xl-4">
+    <div class="card bg-dark text-white">
+      <img class="card-img" src="https://i.pinimg.com/originals/31/da/cd/31dacdcf8f679d857cfa7658e1607454.png" alt="Card image">
+      <div class="card-img-overlay">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text">Last updated 3 mins ago</p>
+      </div>
+    </div>
+  </div>
+   <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 col-xl-4">
+    <div class="card bg-dark text-white">
+      <img class="card-img" src="https://i.pinimg.com/originals/31/da/cd/31dacdcf8f679d857cfa7658e1607454.png" alt="Card image">
+      <div class="card-img-overlay">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text">Last updated 3 mins ago</p>
+      </div>
     </div>
   </div>
 </div>
-
-</div>
-
 </div>
 
 
