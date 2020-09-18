@@ -26,8 +26,7 @@ The main goal of this project is to show the understanding of the benefits of mo
 
     Any supporting CSS3 and HTML5 browser
 
-## Install
-    No installation applicable
+
 
 1. clone the repository
 
@@ -37,6 +36,7 @@ $ git clone https://github.com/ignatius22/Restuarant-page.git
 
 # Go into the repository
 $ cd Restuarant-page
+  run npm install
   run npm run build
   locate the index file and open with the browser of your choice
 
