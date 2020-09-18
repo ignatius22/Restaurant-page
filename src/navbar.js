@@ -1,39 +1,39 @@
-onst repeatedSetup = () => {
+const repeatedSetup = () => {
   /**
    * 1. Making all elements first that are in 'index.html'
    */
-  
+
   // container, header, main
-  let container = document.createElement('div');
+  const container = document.createElement('div');
   container.setAttribute('id', 'container');
-  
-  let header = document.createElement('header');
-  let main = document.createElement('main');
-  
+
+  const header = document.createElement('header');
+  const main = document.createElement('main');
+
   // Container - Direct elements
-  let headerContainer = document.createElement('div');
+  const headerContainer = document.createElement('div');
   headerContainer.setAttribute('id', 'header-container');
 
-  let mainContainer = document.createElement('div');
+  const mainContainer = document.createElement('div');
   mainContainer.setAttribute('id', 'main-container');
 
 
   // headerContainer elements
-  let restaurantTitle = document.createElement('h1');
+  const restaurantTitle = document.createElement('h1');
   restaurantTitle.setAttribute('id', 'restaurant-title');
   restaurantTitle.innerHTML = 'DG<span id="kor">KOR</span>DISH';
 
 
-  let navBar = document.createElement('ul');
+  const navBar = document.createElement('ul');
   navBar.setAttribute('id', 'nav-bar');
 
   // navBar elements
-  let navBarlis = [];
-  for(let i = 0; i < 4; i++) {
-    let li = document.createElement('li');  
-    let a = document.createElement('a');
+  const navBarlis = [];
+  for (let i = 0; i < 4; i++) {
+    const li = document.createElement('li');
+    const a = document.createElement('a');
     let page;
-    switch(i) {
+    switch (i) {
       case 0:
         page = 'index.html';
         a.innerHTML = 'Home';
@@ -53,8 +53,8 @@ onst repeatedSetup = () => {
     }
 
     a.setAttribute('href', page);
-    li.appendChild(a)
-    navBarlis.push(li);   
+    li.appendChild(a);
+    navBarlis.push(li);
   }
 
 
@@ -66,6 +66,6 @@ onst repeatedSetup = () => {
   container.appendChild(header);
 
   return container;
-}
+};
 
-export { repeatedSetup }
+export { repeatedSetup };

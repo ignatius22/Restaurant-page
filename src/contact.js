@@ -1,38 +1,43 @@
-const contactPageImg = 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80'
+const contactPageImg = 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80';
 
 // Function for loading Contact tab
 const loadContact = () => {
-  let contactMainContainer = document.createElement('div');
+  const contactMainContainer = document.createElement('div');
   contactMainContainer.setAttribute('id', 'contact-main-container');
 
   // mainContainerContents
-  let contactImg = document.createElement('img');
+  const contactImg = document.createElement('img');
   contactImg.setAttribute('src', contactPageImg);
   contactImg.setAttribute('id', 'contact-img');
   contactImg.setAttribute('alt', 'contact-img');
 
-  let contactSection = document.createElement('div');
+  const contactSection = document.createElement('div');
   contactSection.setAttribute('id', 'contact-section');
-  
-  let contactTxt = document.createElement('span');
+
+  const contactTxt = document.createElement('span');
   contactTxt.setAttribute('id', 'contact-txt');
   contactTxt.innerHTML = 'CONTACT US';
 
-  let contactIcons = document.createElement('div');
+  const contactIcons = document.createElement('div');
   contactIcons.setAttribute('id', 'contact-icons');
+  contactIcons.className = 'text-white';
   contactIcons.innerHTML = `
-    <a href="https://github.com/daegudude"><i class="fab fa-github"></i></a>
-    <a href="https://twitter.com/Daegudude_Kim"><i class="fab fa-twitter-square"></i></a>
-    <a href="mailto:k3hppk@gmail.com"><i class="far fa-envelope"></i></a>
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content.
+
+Company: HostRiver
+Address: 4435 Berkshire Circle Knoxville
+Phone: + 879-890-9767
+Website: www.uny.ro
+Program: Mon to Sat: 09:30 AM - 10.30 PM
   `;
-  
+
   // Appending elements to the Main
   contactSection.appendChild(contactTxt);
   contactSection.appendChild(contactIcons);
   contactMainContainer.appendChild(contactImg);
   contactMainContainer.appendChild(contactSection);
-  
-  return contactMainContainer;
-}
 
-export { loadContact }
+  return contactMainContainer;
+};
+
+export { loadContact };

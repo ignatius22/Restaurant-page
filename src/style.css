@@ -219,7 +219,7 @@ main {
   color: #fff;
 }
 
-.fab:hover,
-.far:hover {
-  color: #fff39a;
+.text-white {
+  color: white;
 }
+

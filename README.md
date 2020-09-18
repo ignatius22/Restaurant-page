@@ -4,11 +4,11 @@ The main goal of this project is to show the understanding of the benefits of mo
 
 ## Live demo
 
-[live demo](https://optimistic-bartik-024a59.netlify.app/)
+[live demo](https://adoring-swirles-ca3ccf.netlify.app/)
 
 - Screenshot
-![alt text](src/img/home.png)
-![alt text](src/img/menu.png)
+![alt text](home.png)
+![alt text](menu.png)
 
 
 
