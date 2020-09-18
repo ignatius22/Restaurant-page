@@ -1,50 +1,76 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './style.css';
-import 'bootstrap';
-import 'bootstrap/js/dist/dropdown';
-import renderNav from './navbar';
-import renderHome from './home';
-import renderMenu from './menu';
-import renderContact from './contact';
+// Modules for each tab
+import { initialLoad, repeatedSetup } from './home'
+import { loadAbout } from './about'
+import { loadMenu } from './menu'
+import { loadContact } from './contact'
+import 'bootstrap'
+// CSS
+import './style.css'
+
+let content = document.getElementById('content');
+
+// Loading Home Contents
+content.appendChild(repeatedSetup());
+let main = content.querySelector('main');
+main.appendChild(initialLoad());
 
 
-renderNav();
-renderHome();
+/**
+ * Tab swtiching logic. If any tab is clicked, it will load the
+ * contents regarding to it
+ */
+let navBar = content.querySelector('ul');
 
-const tabLinks = document.querySelectorAll('.nav-link');
-const content = document.getElementById('content');
+// Add eventListeners to all li
+for(let i = 0; i < navBar.children.length; i++) {
+  let li = navBar.children[i];
 
-const renderPage = (location, page) => {
-  location.innerHTML = '';
-  page();
-};
+  
+  li.addEventListener('click', (event) => {
+    let tab = li.innerHTML;
 
-const removeActive = () => {
-  tabLinks.forEach((link) => {
-    if (link.classList.contains('active')) {
-      link.classList.remove('active');
-    }
-  });
-};
+    switch(tab) {
+      case 'Home':
+        main.innerHTML = '';
+        main.appendChild(initialLoad());
 
-tabLinks.forEach((link) => {
-  link.addEventListener('click', (e) => {
-    if (e.target.textContent === 'Home') {
-      removeActive();
-      e.target.classList.add('active');
-      renderPage(content, renderHome);
-    }
+        // Make a bottom line
+        navRemoveBottomLine();
+        li.style.borderBottom = "5px solid #20de83";        
+        break;
 
-    if (e.target.textContent === 'Menu') {
-      removeActive();
-      e.target.classList.add('active');
-      renderPage(content, renderMenu);
-    }
+      case 'About':
+        main.innerHTML = '';
+        main.appendChild(loadAbout());
 
-    if (e.target.textContent === 'Contact') {
-      removeActive();
-      e.target.classList.add('active');
-      renderPage(content, renderContact);
-    }
-  });
-});
+        // Make a bottom line
+        navRemoveBottomLine();
+        li.style.borderBottom = "5px solid #20de83";      
+        break;
+
+      case 'Menu':
+        main.innerHTML = '';
+        main.appendChild(loadMenu());
+
+        // Make a bottom line
+        navRemoveBottomLine();
+        li.style.borderBottom = "5px solid #20de83";      
+        break;
+
+      case 'Contact':
+        main.innerHTML = '';
+        main.appendChild(loadContact());
+
+        // Make a bottom line
+        navRemoveBottomLine();
+        li.style.borderBottom = "5px solid #20de83";      
+        break;
+    }    
+  })
+}
+
+const navRemoveBottomLine = () => {
+  for(let i = 0; i < navBar.children.length; i++) {
+    navBar.children[i].style.borderBottom = '';
+  }
+}

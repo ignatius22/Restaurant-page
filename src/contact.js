@@ -1,39 +1,38 @@
-const content = document.getElementById('content');
+const contactPageImg = 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80'
 
-const contact = `
-<div class="container contact-form">
-            <div class="contact-image">
-                <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
-            </div>
-            <form method="post">
-                <h3>Drop Us a Message</h3>
-               <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
-                        </div>
-                    </div>
-                </div>
-            </form>
-</div>
-`;
+// Function for loading Contact tab
+const loadContact = () => {
+  let contactMainContainer = document.createElement('div');
+  contactMainContainer.setAttribute('id', 'contact-main-container');
 
-const renderContact = () => {
-  content.insertAdjacentHTML('beforeend', contact);
-};
+  // mainContainerContents
+  let contactImg = document.createElement('img');
+  contactImg.setAttribute('src', contactPageImg);
+  contactImg.setAttribute('id', 'contact-img');
+  contactImg.setAttribute('alt', 'contact-img');
 
-export default renderContact;
+  let contactSection = document.createElement('div');
+  contactSection.setAttribute('id', 'contact-section');
+  
+  let contactTxt = document.createElement('span');
+  contactTxt.setAttribute('id', 'contact-txt');
+  contactTxt.innerHTML = 'CONTACT US';
+
+  let contactIcons = document.createElement('div');
+  contactIcons.setAttribute('id', 'contact-icons');
+  contactIcons.innerHTML = `
+    <a href="https://github.com/daegudude"><i class="fab fa-github"></i></a>
+    <a href="https://twitter.com/Daegudude_Kim"><i class="fab fa-twitter-square"></i></a>
+    <a href="mailto:k3hppk@gmail.com"><i class="far fa-envelope"></i></a>
+  `;
+  
+  // Appending elements to the Main
+  contactSection.appendChild(contactTxt);
+  contactSection.appendChild(contactIcons);
+  contactMainContainer.appendChild(contactImg);
+  contactMainContainer.appendChild(contactSection);
+  
+  return contactMainContainer;
+}
+
+export { loadContact }

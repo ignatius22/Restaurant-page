@@ -1,39 +1,71 @@
-const content = document.getElementById('content');
+onst repeatedSetup = () => {
+  /**
+   * 1. Making all elements first that are in 'index.html'
+   */
+  
+  // container, header, main
+  let container = document.createElement('div');
+  container.setAttribute('id', 'container');
+  
+  let header = document.createElement('header');
+  let main = document.createElement('main');
+  
+  // Container - Direct elements
+  let headerContainer = document.createElement('div');
+  headerContainer.setAttribute('id', 'header-container');
 
-const nav = `
-<nav class="navbar navbar-expand-lg navbar-light navsh sticky-top">
-  <a class="navbar-brand text-white" href="index.html">Tasty bite</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  let mainContainer = document.createElement('div');
+  mainContainer.setAttribute('id', 'main-container');
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link text-white" href="index.html">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-white" href="#">Menu</a>
-      </li>
-        <li class="nav-item">
-        <a class="nav-link text-white" href="#">Contact</a>
-      </li>
 
-        <li class="nav-item">
-        <a class="nav-link text-white" href="#">About</a>
-      </li>
-     
-    </ul>
-    <form class="form-inline my-2 my-lg-0 ml-auto">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-`;
+  // headerContainer elements
+  let restaurantTitle = document.createElement('h1');
+  restaurantTitle.setAttribute('id', 'restaurant-title');
+  restaurantTitle.innerHTML = 'DG<span id="kor">KOR</span>DISH';
 
-const renderNav = () => {
-  content.insertAdjacentHTML('beforebegin', nav);
-};
 
-export default renderNav;
+  let navBar = document.createElement('ul');
+  navBar.setAttribute('id', 'nav-bar');
+
+  // navBar elements
+  let navBarlis = [];
+  for(let i = 0; i < 4; i++) {
+    let li = document.createElement('li');  
+    let a = document.createElement('a');
+    let page;
+    switch(i) {
+      case 0:
+        page = 'index.html';
+        a.innerHTML = 'Home';
+        break;
+      case 1:
+        page = 'about.html';
+        a.innerHTML = 'About';
+        break;
+      case 2:
+        page = 'menu.html';
+        a.innerHTML = 'Menu';
+        break;
+      case 3:
+        page = 'Contact.html';
+        a.innerHTML = 'Contact';
+        break;
+    }
+
+    a.setAttribute('href', page);
+    li.appendChild(a)
+    navBarlis.push(li);   
+  }
+
+
+  // Header
+  navBarlis.forEach(li => navBar.appendChild(li));
+  headerContainer.appendChild(restaurantTitle);
+  headerContainer.appendChild(navBar);
+  header.appendChild(headerContainer);
+  container.appendChild(header);
+
+  return container;
+}
+
+export { repeatedSetup }
