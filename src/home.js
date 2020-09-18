@@ -57,21 +57,16 @@ data-ride="carousel"
 
 const aboutInfo = `
 <div class="container p-2">
-<div class="row mt-5">
-    <h1 class="border-bottom">About</h1>
+<div class="text-center mt-5">
+<div class="jumbotron text-center shadow-lg navsh text-white">
+  <h1 class="display-4">Welcome to the Tasty Bite</h1>
+  <p class="lead">get the best African food at affordable price</p>
+  <hr class="my-4">
+  <p>we care about you stomach a lot, so we make you the best break-fast, lunch and dinner that will keep you coming for more... 😋</p>
   <p class="lead">
-    Hi there! Welcome to Exquisite Kitchen where I share my passion for
-    cooking with the world. Cooking is meant to be fun and not boring, so,
-    I would be sharing with you easy and healthy recipes you can try out.
-    Hey! I’m not here to turn you to a perfect cook but to help you
-    navigate the kitchen and make food everyone will love.
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
   </p>
-  <p class="lead">
-    For anyone who shares the same passion as me and would love to watch
-    and learn more, do well to subscribe (so you will be the first to be
-    notified when I upload a new video), share and give my videos a thumbs
-    up. Checkout my <a href="https://www.youtube.com/channel/UCNRhWLhBFVZFrPiC5T2xCQA/videos" target="_blank">YouTube Channel</a> 
-  </p>
+</div>
 </div>
 <div class ="row">
   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-xl-6 mb-4">
@@ -100,7 +95,7 @@ const aboutInfo = `
 <div class ="row">
   <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 col-xl-4 mb-4">
     <div class="card bg-dark text-white">
-      <img class="card-img" src="https://www.travelstart.com.ng/blog/wp-content/uploads/2014/03/Pounded-Yam1.jpg">
+      <img class="card-img" src="https://i.pinimg.com/originals/13/10/82/131082235d031c0390430279c9bef0df.jpg">
       <div class="card-img-overlay">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -108,10 +103,9 @@ const aboutInfo = `
       </div>
     </div>
   </div>
-
   <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 col-xl-4">
     <div class="card bg-dark text-white">
-      <img class="card-img" src="https://i.pinimg.com/originals/31/da/cd/31dacdcf8f679d857cfa7658e1607454.png" alt="Card image">
+      <img class="card-img" src="https://img.theculturetrip.com/450x/wp-content/uploads/2017/11/shutterstock_327873263.jpg" alt="Card image">
       <div class="card-img-overlay">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -119,9 +113,39 @@ const aboutInfo = `
       </div>
     </div>
   </div>
-   <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 col-xl-4">
+  <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 col-xl-4">
     <div class="card bg-dark text-white">
-      <img class="card-img" src="https://i.pinimg.com/originals/31/da/cd/31dacdcf8f679d857cfa7658e1607454.png" alt="Card image">
+      <img class="card-img" src="https://allnigerianfoods.com/wp-content/uploads/egusi-soup-recipe.jpg" alt="Card image">
+      <div class="card-img-overlay">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text">Last updated 3 mins ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 col-xl-4 mb-4">
+    <div class="card bg-dark text-white">
+      <img class="card-img" src="https://i0.wp.com/www.thepretendchef.com/wp-content/uploads/2017/10/okrosoup-1.jpg?fit=499%2C480">
+      <div class="card-img-overlay">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text">Last updated 3 mins ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 col-xl-4">
+    <div class="card bg-dark text-white">
+      <img class="card-img" src="https://i2.wp.com/4.bp.blogspot.com/-TN_IidPpIOg/UZOMDXggagI/AAAAAAAADC4/9N1zYIzlRT8/s400/Boiled+irish+potato+with+vegetable+sauce.jpg?resize=400%2C300" alt="Card image">
+      <div class="card-img-overlay">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text">Last updated 3 mins ago</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 col-xl-4">
+    <div class="card bg-dark text-white">
+      <img class="card-img" src="https://allnigerianfoods.com/wp-content/uploads/jollof-rice.jpg" alt="Card image">
       <div class="card-img-overlay">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -130,6 +154,7 @@ const aboutInfo = `
     </div>
   </div>
 </div>
+
 </div>
 
 
