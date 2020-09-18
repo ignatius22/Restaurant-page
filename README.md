@@ -4,7 +4,7 @@ The main goal of this project is to show the understanding of the benefits of mo
 
 ## Live demo
 
-[live demo](https://laughing-franklin-989ea6.netlify.app/)
+[live demo](https://optimistic-bartik-024a59.netlify.app/)
 
 - Screenshot
 ![alt text](src/img/home.png)
