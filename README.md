@@ -4,7 +4,7 @@ The main goal of this project is to show the understanding of the benefits of mo
 
 ## Live demo
 
-[live demo](https://rawcdn.githack.com/ignatius22/Tic-Tac-Toe-js/864ea3cc130955dad4dc7519d3c0ba4b8b8215b4/index.html)
+[live demo](https://laughing-franklin-989ea6.netlify.app/)
 
 - Screenshot
 ![alt text](src/img/home.png)
