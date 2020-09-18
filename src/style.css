@@ -1,6 +1,7 @@
-.bg{
-	background-image: linear-gradient(to right top, #6baed1, #6dadd6, #70addb, #75abdf, #7baae3, #76b1ea, #70b8f1, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+.bg {
+  background-image: linear-gradient(to right top, #6baed1, #6dadd6, #70addb, #75abdf, #7baae3, #76b1ea, #70b8f1, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
 }
-.navsh{
-	background-image: linear-gradient(to right top, #0b161c, #151d23, #1d252b, #262c32, #2f343a, #393f45, #444a50, #4f565b, #5f686c, #707b7d, #818e8f, #94a1a0);
+
+.navsh {
+  background-image: linear-gradient(to right top, #0b161c, #151d23, #1d252b, #262c32, #2f343a, #393f45, #444a50, #4f565b, #5f686c, #707b7d, #818e8f, #94a1a0);
 }
