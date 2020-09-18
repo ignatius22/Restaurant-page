@@ -17,7 +17,7 @@ li:hover {
   cursor: pointer;
   border-bottom: 5px solid #20de83;
 }
-  
+
 a {
   text-decoration: none;
 }
@@ -25,7 +25,6 @@ a {
 #container {
   background: #bf9a9a;
   height: 100vh;
-
   display: flex;
   flex-direction: column;
 }
@@ -38,7 +37,6 @@ header {
   height: 100%;
   background: #262222;
   padding: 0 2.9%;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,14 +48,14 @@ header {
 }
 
 #restaurant-title #kor {
-  color: #E33535;
+  color: #e33535;
 }
 
 #nav-bar {
   display: flex;
   align-items: center;
 }
-/*  */
+
 #nav-bar li {
   margin-right: 20px;
   color: #fff;
@@ -67,8 +65,6 @@ header {
 #nav-bar li:last-child {
   margin-right: 0;
 }
-
-
 
 main {
   flex: 8.5 0 0;
@@ -81,7 +77,6 @@ main {
   width: 100%;
   height: 100%;
   background-color: #000;
-
   position: relative;
 }
 
@@ -96,7 +91,6 @@ main {
   position: absolute;
   width: 66%;
   max-width: 700px;
-  
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -114,7 +108,6 @@ main {
   width: 100%;
   height: 100%;
   background-color: #000;
-
   position: relative;
 }
 
@@ -125,15 +118,12 @@ main {
   opacity: 0.5;
 }
 
-
 #about-phrase-box {
   position: absolute;
   width: 66%;
-  
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -158,7 +148,6 @@ main {
   width: 100%;
   height: 100%;
   background: #fff;
-
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -178,7 +167,6 @@ main {
   width: 100%;
   height: 100%;
   background-color: #000;
-
   position: relative;
 }
 
@@ -192,11 +180,9 @@ main {
 #contact-section {
   position: absolute;
   width: 66%;
-  
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -213,7 +199,8 @@ main {
   text-align: center;
 }
 
-.fab, .far {
+.fab,
+.far {
   font-size: 3rem;
   margin-right: 20px;
   color: #fff;
@@ -222,4 +209,3 @@ main {
 .text-white {
   color: white;
 }
-
