@@ -6,21 +6,19 @@ const crabImg = 'https://allnigerianfoods.com/wp-content/uploads/egusi-soup-reci
 const bulgogiImg = 'https://afrotourism.com/wp-content/uploads/2018/06/ofada-sauce1.jpg';
 
 
-// Function for loading Menu tab
 const loadMenu = () => {
   const menuMainContainer = document.createElement('div');
   menuMainContainer.setAttribute('id', 'menu-main-container');
 
-  // mainContainer
   const mainContainerItems = [];
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i < 6; i += 1) {
     const div = document.createElement('div');
     div.setAttribute('class', 'menu-items');
 
-    // Create a new image HTML element
     const img = new Image();
 
     switch (i) {
+      default:
       case 0:
         img.src = makChangImg;
         div.appendChild(img);
@@ -55,10 +53,9 @@ const loadMenu = () => {
     mainContainerItems.push(div);
   }
 
-  // Appending elements to the mainContainer
   mainContainerItems.forEach(div => menuMainContainer.appendChild(div));
 
   return menuMainContainer;
 };
 
-export { loadMenu };
+export default loadMenu;

@@ -12,7 +12,6 @@ ul {
   list-style-type: none;
 }
 
-/* When list is hovered, change a mouse pointer into a handpointer */
 li:hover {
   cursor: pointer;
   border-bottom: 5px solid #20de83;
@@ -71,8 +70,6 @@ main {
   min-height: 500px;
 }
 
-/* HOME */
-
 #home-main-container {
   width: 100%;
   height: 100%;
@@ -102,7 +99,7 @@ main {
   text-align: center;
 }
 
-/* ABOUT */
+
 
 #about-main-container {
   width: 100%;
@@ -142,7 +139,6 @@ main {
   text-align: center;
 }
 
-/* MENU */
 
 #menu-main-container {
   width: 100%;
@@ -161,7 +157,7 @@ main {
   object-fit: cover;
 }
 
-/* CONTACT */
+
 
 #contact-main-container {
   width: 100%;

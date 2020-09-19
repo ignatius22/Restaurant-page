@@ -1,31 +1,30 @@
-// Modules for each tab
 import { initialLoad, repeatedSetup } from './home';
-import { loadAbout } from './about';
-import { loadMenu } from './menu';
-import { loadContact } from './contact';
-// CSS
+import loadAbout from './about';
+import loadMenu from './menu';
+import loadContact from './contact';
+
 import './style.css';
 
 const content = document.getElementById('content');
 
-// Loading Home Contents
 content.appendChild(repeatedSetup());
 const main = content.querySelector('main');
 main.appendChild(initialLoad());
 
 
-/**
- * Tab swtiching logic. If any tab is clicked, it will load the
- * contents regarding to it
- */
 const navBar = content.querySelector('ul');
 
-// Add eventListeners to all li
-for (let i = 0; i < navBar.children.length; i++) {
+
+for (let i = 0; i < navBar.children.length; i += 1) {
   const li = navBar.children[i];
 
+  const navRemoveBottomLine = () => {
+    for (let i = 0; i < navBar.children.length; i += 1) {
+      navBar.children[i].style.borderBottom = '';
+    }
+  };
 
-  li.addEventListener('click', (event) => {
+  li.addEventListener('click', () => {
     const tab = li.innerHTML;
 
     switch (tab) {
@@ -33,7 +32,6 @@ for (let i = 0; i < navBar.children.length; i++) {
         main.innerHTML = '';
         main.appendChild(initialLoad());
 
-        // Make a bottom line
         navRemoveBottomLine();
         li.style.borderBottom = '5px solid #20de83';
         break;
@@ -42,16 +40,15 @@ for (let i = 0; i < navBar.children.length; i++) {
         main.innerHTML = '';
         main.appendChild(loadAbout());
 
-        // Make a bottom line
         navRemoveBottomLine();
         li.style.borderBottom = '5px solid #20de83';
         break;
 
       case 'Menu':
+      default:
         main.innerHTML = '';
         main.appendChild(loadMenu());
 
-        // Make a bottom line
         navRemoveBottomLine();
         li.style.borderBottom = '5px solid #20de83';
         break;
@@ -59,17 +56,8 @@ for (let i = 0; i < navBar.children.length; i++) {
       case 'Contact':
         main.innerHTML = '';
         main.appendChild(loadContact());
-
-        // Make a bottom line
         navRemoveBottomLine();
         li.style.borderBottom = '5px solid #20de83';
-        break;
     }
   });
 }
-
-const navRemoveBottomLine = () => {
-  for (let i = 0; i < navBar.children.length; i++) {
-    navBar.children[i].style.borderBottom = '';
-  }
-};

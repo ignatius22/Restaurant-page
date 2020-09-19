@@ -1,11 +1,10 @@
 const aboutPageImg = 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80';
 
-// Function for loading About tab
 const loadAbout = () => {
   const aboutMainContainer = document.createElement('div');
   aboutMainContainer.setAttribute('id', 'about-main-container');
 
-  // Main Container contents
+
   const aboutImg = document.createElement('img');
   aboutImg.setAttribute('src', aboutPageImg);
   aboutImg.setAttribute('id', 'about-img');
@@ -23,7 +22,6 @@ const loadAbout = () => {
   phraseBoxP.innerHTML = 'Get the best Nigerian food here';
 
 
-  // Appending elements to the Main
   aboutPhraseBox.appendChild(phraseBoxSpan);
   aboutPhraseBox.appendChild(phraseBoxP);
   aboutMainContainer.appendChild(aboutImg);
@@ -32,4 +30,4 @@ const loadAbout = () => {
   return aboutMainContainer;
 };
 
-export { loadAbout };
+export default loadAbout;
