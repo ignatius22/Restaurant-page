@@ -1,0 +1,1 @@
+import { HomePage } from './components/home';
