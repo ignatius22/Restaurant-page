@@ -1,0 +1,103 @@
+.bg-dark {
+  background-color: #1b1f23 !important;
+}
+
+a {
+  color: #fff !important;
+  font-family: 'Odibee Sans', cursive;
+  font-size: 24px;
+  padding: 8px;
+}
+
+a:hover {
+  background-color: #343a40 !important;
+  border-radius: 20% 0px 0px;
+  color: #eae1e1 !important;
+  cursor: pointer;
+}
+
+.navbar {
+  padding-bottom: 0px;
+}
+
+.navbar-brand {
+  font-family: 'Odibee Sans', cursive;
+  font-size: 28px;
+}
+
+.container {
+  margin-top: 8%;
+}
+
+.title {
+  font-family: 'Almendra Display', cursive;
+  font-weight: bolder;
+}
+
+.description {
+  font-family: 'Dancing Script', cursive;
+}
+
+.quote {
+  font-family: 'Great Vibes', cursive;
+}
+
+// I adapted most of the style rules for the form from bootsnipp.com
+
+.form_main {
+    width: 100%;
+}
+.form_main h4 {
+    font-family: roboto;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.heading {
+    border-bottom: 1px solid #fcab0e;
+    padding-bottom: 9px;
+    position: relative;
+}
+.heading span {
+    background: #9e6600 none repeat scroll 0 0;
+    bottom: -2px;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 75px;
+}   
+.form {
+    border-radius: 7px;
+    padding: 6px;
+}
+.txt[type="text"] {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+}
+.txt_3[type="text"] {
+    margin: 10px 0 0;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+}
+.txt2[type="submit"] {
+    background: #1b1f23 none repeat scroll 0 0;
+    border: 1px solid #4f5c04;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 35px;
+    margin: 10px 0;
+    padding: 0;
+    text-transform: uppercase;
+    width: 30%;
+}
+.txt2:hover {
+    background: #6f6d6d none repeat scroll 0 0;
+    color: #eae1e1;
+    transition: all 0.5s ease 0s;
+}

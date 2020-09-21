@@ -1,6 +1,6 @@
 const image = 'https://allnigerianfoods.com/wp-content/uploads/nigerian-dinner-ideas.jpg';
 
-const HomePage = (() => {
+const homePage = (() => {
   const getName = () => "Noodle's Palace";
 
   const getDescription = () => `<h4 class='title'>This is Noodle Palace</h4>
@@ -13,4 +13,4 @@ const HomePage = (() => {
   return { getName, getDescription, getImage };
 })();
 
-export { HomePage };
+export { homePage };
