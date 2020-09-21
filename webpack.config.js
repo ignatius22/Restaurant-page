@@ -1,4 +1,4 @@
-  const path = require('path');
+ const path = require('path');
 
   module.exports = {
     entry: './src/index.js',
@@ -6,15 +6,30 @@
       filename: 'main.js',
       path: path.resolve(__dirname, 'dist'),
     },
-   module: {
-     rules: [
+    module: {
+      rules: [
+        {
+          test: /\.css$/,
+          use: [
+            'style-loader',
+            'css-loader'
+          ],
+        },
+        {
+          test: /\.(png|svg|jpg|gif)$/,
+          use: [
+            'file-loader',
+          ],
+        },
        {
-         test: /\.css$/,
+         test: /\.(woff|woff2|eot|ttf|otf)$/,
          use: [
-           'style-loader',
-           'css-loader',
+           'file-loader',
          ],
        },
-     ],
+      ],
+    },
+       devServer: {
+     contentBase: './dist',
    },
   };
