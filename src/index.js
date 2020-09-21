@@ -13,9 +13,9 @@ container.className = 'container';
 const row = document.createElement('div');
 row.className = 'row';
 
-const descrip = document.createElement('div');
-descrip.className = 'col-4';
-row.appendChild(descrip);
+const description = document.createElement('div');
+description.className = 'col-4';
+row.appendChild(description);
 
 const contenImg = document.createElement('img');
 contenImg.className = 'col-8';
@@ -40,7 +40,7 @@ function linkTags(currElem) {
 
 navMenu.addEventListener('click', (e) => {
   const elem = e.target;
-  descrip.innerHTML = elem.getAttribute('data_description');
+  description.innerHTML = elem.getAttribute('data_description');
   contenImg.src = elem.getAttribute('data_image');
   linkTags(elem);
 });
@@ -48,7 +48,7 @@ navMenu.addEventListener('click', (e) => {
 const brand = document.getElementById('brand');
 
 function load() {
-  descrip.innerHTML = brand.getAttribute('data_description');
+  description.innerHTML = brand.getAttribute('data_description');
   contenImg.src = brand.getAttribute('data_image');
   linkTags(brand);
 }

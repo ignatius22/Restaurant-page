@@ -1,10 +1,12 @@
 .bg-dark {
-  background-color: #1b1f23 !important;
+  background: #0F2027 !important; 
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027) !important;
+
 }
 
 a {
   color: #fff !important;
-  font-family: 'Odibee Sans', cursive;
+  font-family: 'Satisfy', cursive;
   font-size: 24px;
   padding: 8px;
 }
@@ -21,7 +23,7 @@ a:hover {
 }
 
 .navbar-brand {
-  font-family: 'Odibee Sans', cursive;
+  font-family: 'Satisfy', cursive;
   font-size: 28px;
 }
 
@@ -30,19 +32,18 @@ a:hover {
 }
 
 .title {
-  font-family: 'Almendra Display', cursive;
+  font-family: 'Satisfy', cursive;
   font-weight: bolder;
 }
 
 .description {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Didact Gothic', sans-serif;
 }
 
 .quote {
   font-family: 'Great Vibes', cursive;
 }
 
-// I adapted most of the style rules for the form from bootsnipp.com
 
 .form_main {
     width: 100%;
@@ -61,7 +62,7 @@ a:hover {
     position: relative;
 }
 .heading span {
-    background: #9e6600 none repeat scroll 0 0;
+   
     bottom: -2px;
     height: 3px;
     left: 0;

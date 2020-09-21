@@ -1,4 +1,4 @@
-const image = 'https://dooneyskitchen.com/wp-content/uploads/2014/09/IMG_0033-1024x764.jpg';
+const image = 'https://allnigerianfoods.com/wp-content/uploads/jollof-rice.jpg';
 
 const about = (() => {
   const getName = () => 'About';
