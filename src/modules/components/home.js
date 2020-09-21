@@ -1,7 +1,7 @@
 const image = 'https://allnigerianfoods.com/wp-content/uploads/nigerian-dinner-ideas.jpg';
 
 const homePage = (() => {
-  const getName = () => "Tasty Bite";
+  const getName = () => 'Tasty Bite';
 
   const getDescription = () => `<h4 class='title'>This is Tasty Bite</h4>
     <p class='description'>What would you like to eat today?</p>
