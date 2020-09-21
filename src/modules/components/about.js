@@ -4,7 +4,7 @@ const about = (() => {
   const getName = () => 'About';
 
 
-  const getDescription = () => `<h4>Noodle's Palace</h4>
+  const getDescription = () => `<h4 class="tasty">Tasty Bite</h4>
     <p>We have been feeding the appetite of the world for over a century now</p>`;
 
   const getImage = () => image.toString();

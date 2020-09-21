@@ -1,12 +1,12 @@
 const image = 'https://allnigerianfoods.com/wp-content/uploads/nigerian-dinner-ideas.jpg';
 
 const homePage = (() => {
-  const getName = () => "Noodle's Palace";
+  const getName = () => "Tasty Bite";
 
-  const getDescription = () => `<h4 class='title'>This is Noodle Palace</h4>
-    <p class='description'>This is home of noodles where we serve you best enriching plate of noodles.</p>
-    <p class='quote text-center'>“Listen to the people who love you. Believe that they are worth living for even when you don't believe it. Seek out the memories depression takes away and project them into the future. Be brave; be strong; take your pills. Exercise because it's good for you even if every step weighs a thousand pounds. Eat when food itself disgusts you. Reason with yourself when you have lost your reason.”
-<br><span><b>― Andrew Solomon</b></span></p>`;
+  const getDescription = () => `<h4 class='title'>This is Tasty Bite</h4>
+    <p class='description'>What would you like to eat today?</p>
+    <p class='quote text-center'>“What I say is that, if a man really likes potatoes, he must be a pretty decent sort of fellow.”
+<br><span><b>― A.A. Milne</b></span></p>`;
 
   const getImage = () => image.toString();
 
